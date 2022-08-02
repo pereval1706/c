@@ -4,6 +4,7 @@ SetArray(array);
 PrintArray(array);
 Zadacha31(array);
 
+
 array = SetArrayFunc(array.Length);
 PrintArray(array);
 Zadacha31(array);
@@ -54,3 +55,27 @@ void Zadacha31(int[] currentArray)
     Console.WriteLine();
     Console.WriteLine($"Сумма положительных элементов равна {sumPos}, сумма отрицательных элементов равна {sumNeg}");
 }
+
+
+//Задача 32 Напишите программу замены элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
+//[-4, -8, 8, 2] -> [4, 8, -8, -2]
+
+changeArray(array);
+PrintArray(array);
+void changeArray (int[] currentArray)
+{
+    for (int i = 0; i < currentArray.Length; i++)
+    {
+        currentArray[i] = -1 * currentArray[i];
+    }
+}
+
+
+
+
+
+
+
+//Задача 33 Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+// 4; массив [6,7,19,345,3]-> нет
+// 3; массив [6,7,19,345,3]-> да
